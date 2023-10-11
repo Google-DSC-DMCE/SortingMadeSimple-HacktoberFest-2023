@@ -1,19 +1,14 @@
 # SortingMadeSimple-HacktoberFest-2023
 
-<div align="center" style="height: 130px">
-
-<h1 align="center">  ALGO / VISUALIZER </h1>
-Algorithm visualizer is a react base web app where we can visualize and play with algorithm.
-
-</div>
-
 
 # Hacktoberfest23
+
+
 
 ## What is Hacktoberfest?
 A month-long celebration from October 1st - 31st to get people involved in [Open Source](https://github.com/open-source).
 
-![HacktoberFest2023](https://github.com/Google-DSC-DMCE/Expense-Tracker-Hacktober2023/assets/98736611/b2548c4a-8940-40e7-bc07-49a7b663836f)
+![hacktober](https://github.com/Google-DSC-DMCE/SortingMadeSimple-HacktoberFest-2023/assets/121281628/6728e317-7e27-4953-81bb-f2c9053c8e6a)
 
 
 ## Specifically for Hacktoberfest:
@@ -40,6 +35,14 @@ A month-long celebration from October 1st - 31st to get people involved in [Open
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 <!-- - Add your name to the contributorsList file. -->
 - Try to keep pull requests small to minimize merge conflicts
+
+
+<div align="center" style="height: 130px">
+
+<h1 align="center">  Sorting Made Simple </h1>
+Algorithm visualizer is a react base web app where we can visualize and play with algorithm.
+
+</div>
 
 
 ## Algorithms
