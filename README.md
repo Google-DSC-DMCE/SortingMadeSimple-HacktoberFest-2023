@@ -7,6 +7,41 @@ Algorithm visualizer is a react base web app where we can visualize and play wit
 
 </div>
 
+
+# Hacktoberfest23
+
+## What is Hacktoberfest?
+A month-long celebration from October 1st - 31st to get people involved in [Open Source](https://github.com/open-source).
+
+![HacktoberFest2023](https://github.com/Google-DSC-DMCE/Expense-Tracker-Hacktober2023/assets/98736611/b2548c4a-8940-40e7-bc07-49a7b663836f)
+
+
+## Specifically for Hacktoberfest:
+
+  Your PR must be created between October 1 and October 31 (in any time zone, UTC-12 thru UTC+14).
+ 
+  Your PR must be made to a public, unarchived repository.
+  
+  
+
+
+
+# 📌 Videos 📽️:
+
+- [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
+- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
+
+
+# Contribution Rules📚:
+
+- You are allowed to make pull requests that break the rules. We just merge it ;)
+- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+- Do NOT remove other content.
+- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+<!-- - Add your name to the contributorsList file. -->
+- Try to keep pull requests small to minimize merge conflicts
+
+
 ## Algorithms
 
 - Bubble Sort
