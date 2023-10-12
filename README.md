@@ -42,6 +42,7 @@ A month-long celebration from October 1st - 31st to get people involved in [Open
 <h1 align="center">  Sorting Made Simple </h1>
 Algorithm visualizer is a react base web app where we can visualize and play with algorithm.
 
+https://sorting-made-simple.vercel.app/
 </div>
 
 
