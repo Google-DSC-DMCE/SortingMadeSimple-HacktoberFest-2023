@@ -1,5 +1,3 @@
-
-
 import "./App.css";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
@@ -21,27 +19,27 @@ import Dfs from "./pages/Dfs";
 import { SnackbarProvider } from "notistack";
 
 function App() {
-	return (
-		<SnackbarProvider>
-			<div className="App">
-				<NavBar />
-				<Switch>
-			        {/* <Route path="/" exact component={HomePage} /> */}
-					<Route path="/" exact component={HomePage} />
-					<Route path="/bubblesort" exact component={BubbleSortPage} />
-					<Route path="/quicksort" exact component={QuickSortPage} />
-					<Route path="/mergesort" exact component={MergeSortPage} />
-					<Route path="/selectionsort" exact component={SelectionSortPage} />
-					<Route path="/heapsort" exact component={HeapSortPage} />
-					<Route path="/countingsort" exact component={CountingSortPage} />
-					<Route path="/insertionsort" exact component={InsertionSortPage} />
-					<Route path="/singlylinklist" exact component={SinglyLinkList} />
-					<Route path="/dfs" exact component={Dfs} />
-					<Route path="/dijkstra" exact component={Dijkstra} />
-				</Switch>
-			</div>
-		</SnackbarProvider>
-	);
+  return (
+    <SnackbarProvider>
+      <div className="App">
+        <NavBar />
+        <Switch>
+          {/* <Route path="/" exact component={HomePage} /> */}
+          <Route path="/" exact component={HomePage} />
+          <Route path="/bubblesort" exact component={BubbleSortPage} />
+          <Route path="/quicksort" exact component={QuickSortPage} />
+          <Route path="/mergesort" exact component={MergeSortPage} />
+          <Route path="/selectionsort" exact component={SelectionSortPage} />
+          <Route path="/heapsort" exact component={HeapSortPage} />
+          <Route path="/countingsort" exact component={CountingSortPage} />
+          <Route path="/insertionsort" exact component={InsertionSortPage} />
+          <Route path="/singlylinklist" exact component={SinglyLinkList} />
+          <Route path="/dfs" exact component={Dfs} />
+          <Route path="/dijkstra" exact component={Dijkstra} />
+        </Switch>
+      </div>
+    </SnackbarProvider>
+  );
 }
 
 export default App;
