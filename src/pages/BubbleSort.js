@@ -9,7 +9,7 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
-
+import RefreshIcon from '@mui/icons-material/Refresh';
 import { Box } from "@mui/system";
 import CodeHighlight from "./components/CodeHighlight";
 import SortGenerator from "./components/SortGenerator";
@@ -70,6 +70,7 @@ const useStyles = makeStyles({
 
 const BubbleSort = () => {
   const [inputArr, setInputArr] = useState("");
+ 
   const [arr, setArr] = useState(() => {
     if (inputArr) {
       return inputArr.split(",").map((num) => ({
@@ -185,6 +186,7 @@ const BubbleSort = () => {
 		  }))
 		);
 		setArr(sortedArr);
+    
 	  } else {
 		const sortedArr = await performBubbleSort(arr);
 		setArr(sortedArr);
@@ -204,12 +206,17 @@ const BubbleSort = () => {
 		color: "#f4124b",
 	  });
 	}
-  
 	setAlreadySorted(false);
 	setArr(arrCreated);
   };
-  
+  const handleRefresh =async () => {
 
+    setAlreadySorted(false);
+    setInputArr("")
+    
+
+	}
+ 
   const { Title } = Typography;
 
   return (
@@ -252,13 +259,17 @@ const BubbleSort = () => {
       <div
         style={{
           display: "flex",
+          flexDirection: "row",
+          gap: "2rem",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "2rem",
+          marginTop: "2rem"
+          
         }}
       >
         <input
           type="text"
+          value={inputArr ||""}
           placeholder="Enter a space-separated list of numbers"
           onChange={(e) => setInputArr(e.target.value)}
           style={{
@@ -271,6 +282,16 @@ const BubbleSort = () => {
             textAlign: "center",
           }}
         />
+         <Button
+             
+              size="medium"
+              variant="contained"
+              color="secondary"
+              onClick={handleRefresh}
+              startIcon={<RefreshIcon />}
+            >
+              Refresh
+            </Button>
       </div>
 
       <div className={CanvasContainer}>
