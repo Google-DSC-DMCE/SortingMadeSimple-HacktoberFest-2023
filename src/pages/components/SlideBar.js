@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Drawer,
   IconButton,
@@ -22,7 +22,6 @@ import {
 } from "@material-ui/icons";
 // import { RiLoginBoxLine, RiRegisterLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-
 
 const drawerWidth = 240;
 
@@ -49,7 +48,7 @@ const SlideBar = (props) => {
   };
 
   return (
-    <div className={classes.root} style={{ display: 'absolute' }}>
+    <div className={classes.root} style={{ display: "absolute" }}>
       <Drawer
         className={classes.drawer}
         variant="persistent"
@@ -61,7 +60,7 @@ const SlideBar = (props) => {
       >
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
-            <ClearIcon />
+            <ClearIcon style={{ color: "#007fff" }} />
           </IconButton>
         </div>
         <List>
@@ -69,13 +68,13 @@ const SlideBar = (props) => {
           <List>
             <ListItem button key="Home" component={Link} to="/">
               <ListItemIcon>
-                <HomeIcon />
+                <HomeIcon style={{ color: "#007fff" }} />
               </ListItemIcon>
               <ListItemText primary="Home" />
             </ListItem>
             <ListItem button key="Sorting Algorithms">
               <ListItemIcon>
-                <SortIcon />
+                <SortIcon style={{ color: "#007fff" }} />
               </ListItemIcon>
               <ListItemText primary="Sorting Algorithms" />
             </ListItem>
@@ -86,59 +85,89 @@ const SlideBar = (props) => {
               </ListItemIcon>
               <ListItemText primary="Bubble Sort" />
             </ListItem> */}
-              <ListItem button key="Bubble Sort" component={Link} to="./BubbleSort">
+              <ListItem
+                button
+                key="Bubble Sort"
+                component={Link}
+                to="./BubbleSort"
+              >
                 <ListItemIcon>
-                  <BubbleChartIcon />
+                  <BubbleChartIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Bubble Sort" />
               </ListItem>
-              <ListItem button key="Selection Sort" component={Link} to="./SelectionSort">
+              <ListItem
+                button
+                key="Selection Sort"
+                component={Link}
+                to="./SelectionSort"
+              >
                 <ListItemIcon>
-                  <BubbleChartIcon />
+                  <BubbleChartIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Selection Sort" />
               </ListItem>
 
-              <ListItem button key="Merge Sort" component={Link} to="./MergeSort">
+              <ListItem
+                button
+                key="Merge Sort"
+                component={Link}
+                to="./MergeSort"
+              >
                 <ListItemIcon>
-                  <MergeTypeIcon />
+                  <MergeTypeIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Merge Sort" />
               </ListItem>
               <ListItem button key="Heap Sort" component={Link} to="./HeapSort">
                 <ListItemIcon>
-                  <FilterHdrIcon />
+                  <FilterHdrIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Heap Sort" />
               </ListItem>
-              <ListItem button key="Quick Sort" component={Link} to="./QuickSort">
+              <ListItem
+                button
+                key="Quick Sort"
+                component={Link}
+                to="./QuickSort"
+              >
                 <ListItemIcon>
-                  <FunctionsIcon />
+                  <FunctionsIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Quick Sort" />
               </ListItem>
-              <ListItem button key="Insertion Sort" component={Link} to="./InsertionSort">
+              <ListItem
+                button
+                key="Insertion Sort"
+                component={Link}
+                to="./InsertionSort"
+              >
                 <ListItemIcon>
-                  <InsertChartIcon />
+                  <InsertChartIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Insertion Sort" />
               </ListItem>
-              <ListItem button key="Dijkstra's Algorithm" component={Link} to="./Dijkstra">
+              <ListItem
+                button
+                key="Dijkstra's Algorithm"
+                component={Link}
+                to="./Dijkstra"
+              >
                 <ListItemIcon>
-                  <FilterHdrIcon />
+                  <FilterHdrIcon style={{ color: "#007fff" }} />
                 </ListItemIcon>
                 <ListItemText primary="Dijkstra's Algorithm" />
               </ListItem>
             </List>
             <ListItem button key="Login">
               <ListItemIcon>
-                <LockIcon />
+                <LockIcon style={{ color: "#007fff" }} />
               </ListItemIcon>
               <ListItemText primary="Login" />
             </ListItem>
             <ListItem button key="Register">
               <ListItemIcon>
-                <PersonIcon />
+                <PersonIcon style={{ color: "#007fff" }} />
               </ListItemIcon>
               <ListItemText primary="Register" />
             </ListItem>
@@ -148,6 +177,5 @@ const SlideBar = (props) => {
     </div>
   );
 };
-
 
 export default SlideBar;
