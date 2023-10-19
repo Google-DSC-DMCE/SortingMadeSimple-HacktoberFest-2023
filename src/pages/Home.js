@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const Style = makeStyles({
   MainDiv: {
     // border: "1px solid red",
-    background: "#101418",
+
     height: "100%",
     width: "100%",
     // marginTop: "5px",

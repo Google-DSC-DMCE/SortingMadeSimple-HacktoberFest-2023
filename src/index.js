@@ -9,14 +9,14 @@ import { Provider } from "react-redux";
 import store from "./pages/components/utils/store";
 
 ReactDOM.render(
-	<BrowserRouter>
-		<React.StrictMode>
-			<Provider store={store}>
-				<App />
-			</Provider>
-		</React.StrictMode>
-	</BrowserRouter>,
-	document.getElementById("root")
+  <BrowserRouter>
+    <React.StrictMode>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </React.StrictMode>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,10 @@
+:root {
+  --theme-color: lightblue; /* Default light theme color */
+}
+
+.MainDiv {
+  background: var(--theme-color);
+  height: "100%";
+  width: "100%";
+  /* Your other styles here */
+}
